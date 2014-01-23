@@ -101,10 +101,9 @@
                     $(element).hide();
 
                     if (responsive_table) {
-                        $(responsive_table).show();
-                    } else {
-                        responsive_table = create_responsive_table(element, i);
+                        $(responsive_table).remove();
                     }
+                    responsive_table = create_responsive_table(element, i);
 
                 }
 
